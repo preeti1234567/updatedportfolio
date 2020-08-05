@@ -1,8 +1,7 @@
-const path = require("path");
 const fs = require("fs");
+const FILE_PATH = "db/projects.json";
 
 module.exports = function (app) {
-  const FILE_PATH = "db/projects.json";
   let projects = [];
 
   function getId() {
@@ -18,9 +17,9 @@ module.exports = function (app) {
   function updateDb() {
     fs.writeFile(FILE_PATH, JSON.stringify(projects, "/t"), (err) => {
       if (err) throw err;
+      ReadData();
       return true;
     });
-    ReadData();
   }
 
   function ReadData() {
@@ -30,8 +29,9 @@ module.exports = function (app) {
     });
   }
 
+  ReadData();
+
   app.get("/api/projects", (req, res) => {
-    ReadData();
     return res.json(projects);
   });
 
@@ -62,10 +62,11 @@ module.exports = function (app) {
 
   app.put("/api/projects/:id", (req, res) => {
     if (req.params.id) {
-      const targetObject = notes.find(
+      const targetObject = projects.find(
         (item) => item.id === parseInt(req.params.id)
       );
       if (targetObject) {
+        var reqData = req.body;
         if (
           reqData.title &&
           reqData.description &&

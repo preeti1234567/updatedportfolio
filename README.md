@@ -26,8 +26,8 @@ The purpose of this assignment was to make responsive portfolio for mobile and t
 Creating portfolio for myself which will work on both mobile and tablets. It has three pages
 1. Home: By Default About me is displayed. It contains the link About me, Resume, Project, Contact.  
 2. Resume: It contains my resume.
-3. Project: It contains some of my work such as uDecide, workdays-schedular and Password Generator
-4. Contact: It contains contact form.
+3. Project: It contains some of my work such as Financhill, Eat-Da-Burger, Note-Taker, uDecide, workdays-schedular and Password Generator.
+4. Contact: It contains contact form where you can input the information and it will submit it in my contact.json file .
 
 
 By default About me is display. To view other pages use the navigation link which will open in the frame in my home page.

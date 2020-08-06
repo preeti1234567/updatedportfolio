@@ -35,7 +35,7 @@ By default About me is display. To view other pages use the navigation link whic
 
 My Portfolio Website Link ->  (https://preeti1234567.github.io/portfolio/)
 
-![Snapshot](assets/images/portfolio1.png)
-![Snapshot](assets/images/portfolio2.png)
-![Snapshot](assets/images/portfolio3.png)
-![Snapshot](assets/images/portfolio4.png)
+![Snapshot](public/assets/images/portfolio1.png)
+![Snapshot](public/assets/images/portfolio2.png)
+![Snapshot](public/assets/images/portfolio3.png)
+![Snapshot](public/assets/images/portfolio4.png)

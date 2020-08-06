@@ -16,6 +16,10 @@ The purpose of this assignment was to make responsive portfolio for mobile and t
 
 5. *jQuery*
 
+6. *Node*
+
+7. *Express*
+
 
 ##  Details of Project
 

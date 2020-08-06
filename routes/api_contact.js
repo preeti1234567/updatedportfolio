@@ -8,7 +8,7 @@ module.exports = function (app) {
     if (contacts.length === 0) {
       return 1;
     } else {
-      let lastDataInArray = projects.pop();
+      let lastDataInArray = contacts.pop();
       contacts.push(lastDataInArray);
       return lastDataInArray.id + 1;
     }
@@ -39,7 +39,7 @@ module.exports = function (app) {
         name: reqData.name,
         email: reqData.email,
         subject: reqData.subject,
-        message: reqData.messsage,
+        message: reqData.message,
       };
       contacts.push(data);
       updateDb();

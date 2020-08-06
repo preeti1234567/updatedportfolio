@@ -10,24 +10,21 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "public/html/index.html"));
-  });
-  app.get("/aboutMe", function (req, res) {
-    res.sendFile(path.join(__dirname, "public/html/aboutMe.html"));
-  });
-  app.get("/portfolio", function (req, res) {
-    res.sendFile(path.join(__dirname, "public/html/portfolio.html"));
-  });
+  res.sendFile(path.join(__dirname, "html/index.html"));
+});
+app.get("/aboutMe", function (req, res) {
+  res.sendFile(path.join(__dirname, "html/aboutMe.html"));
+});
+app.get("/portfolio", function (req, res) {
+  res.sendFile(path.join(__dirname, "html/portfolio.html"));
+});
 
-  app.get("/contact", function (req, res) {
-    res.sendFile(path.join(__dirname, "public/html/contact.html"));
-  });
+app.get("/contact", function (req, res) {
+  res.sendFile(path.join(__dirname, "html/contact.html"));
+});
 
-
-require('./routes/api_contact')(app);
-
+require("./routes/api_contact")(app);
 
 app.listen(PORT, function () {
-    console.log("App listening on PORT: " + PORT);
-  });
-
+  console.log("App listening on PORT: " + PORT);
+});

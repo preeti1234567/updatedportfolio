@@ -82,30 +82,13 @@
   },
   {
     "id": 7,
-    "title": "Test",
+    "title": "click-game",
     "description": [
-      "FinanChill solves your budgeting needs by organizing and displaying your budget information more easily than ever.",
-      "Users can enter the income, necessary, and unnecessary expenses, and FinanChill will use this information to approximate over time how much the user has saved.",
-      "This information can be updated overtime as the state of the user's budget changes.",
-      "The user can also add purchases that they are considering making in the future, and FinanChill will make advisements depending on the current savings progress.",
-      "FinanChill brings a simple, visually oriented solution to the often daunting task of responsible budgeting."
+      "In this application different images are render to the screen and each image listen for click events.", "The application also keep track of the user's score. The user's score  increment when clicking an image for the first time."," The user's score reset to 0 if the  same image is clicked more than once.", "Every time an image is clicked, the images rendered to the page after shuffling themselves in a random order.", "Once the user's score is reset after an incorrect guess, the game restart."
     ],
-    "github_link": "https://github.com/preeti1234567/BudgetingApp",
-    "deploy_link": "https://https://budgetmaking.herokuapp.com/",
-    "pictureurl": ["../assets/images/browser.gif"]
-  },
-  {
-    "id": "7",
-    "title": "Test Project Update",
-    "description": [
-      "FinanChill solves your budgeting needs by organizing and displaying your budget information more easily than ever.",
-      "Users can enter the income, necessary, and unnecessary expenses, and FinanChill will use this information to approximate over time how much the user has saved.",
-      "This information can be updated overtime as the state of the user's budget changes.",
-      "The user can also add purchases that they are considering making in the future, and FinanChill will make advisements depending on the current savings progress.",
-      "FinanChill brings a simple, visually oriented solution to the often daunting task of responsible budgeting."
-    ],
-    "github_link": "https://github.com/preeti1234567/BudgetingApp",
-    "deploy_link": "https://https://budgetmaking.herokuapp.com/",
-    "pictureurl": ["../assets/images/browser.gif"]
+    "github_link": "https://github.com/preeti1234567/click-game",
+    "deploy_link": "https://preeti1234567.github.io/click-game",
+    "pictureurl": ["../assets/images/click.png"]
   }
+  
 ]
